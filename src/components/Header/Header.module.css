@@ -1,0 +1,11 @@
+.root{
+    height: 70px;
+    font-size: 24px;
+    background: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px pink;
+}

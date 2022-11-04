@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import uuid from "react-uuid";
+import uuidv4 from "react-uuid";
+import {Row, Col, Button, FormControl} from "react-bootstrap";
+import s from './AddTodo.module.css'
 
 function AddToDo({todo, setTodo}) {
     const [value, setValue]= useState('')
@@ -8,7 +10,7 @@ function AddToDo({todo, setTodo}) {
     function saveTodo(){
         setTodo(
             [...todo, {
-                id: uuid.v4(),
+                id: uuidv4(),
                 title: value,
                 status: true
             }]
@@ -18,10 +20,12 @@ function AddToDo({todo, setTodo}) {
     }
 
     return (
-        <div>
-            <input placeholder='Введите задачу' value={value} onChange={(e)=>setValue(e.target.value)}/>
-            <button onClick={saveTodo}>Сохранить</button>
-        </div>
+        <Row>
+            <Col className={s.addTodo}>
+            <FormControl className={s.addTodo} placeholder='Введите задачу' value={value} onChange={(e)=>setValue(e.target.value)}/>
+            <Button className={s.btn} size="lg" onClick={saveTodo} variant="outline-primary">Сохранить</Button>{''}
+            </Col>
+        </Row>
     );
 }
 export default AddToDo;

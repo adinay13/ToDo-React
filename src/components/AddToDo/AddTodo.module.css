@@ -1,0 +1,10 @@
+.addTodo{
+    display: flex;
+    flex: 1;
+    margin-top: 25px;
+
+}
+.btn {
+    margin-left: 13px;
+    margin-top: 22px;
+}
