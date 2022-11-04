@@ -1,7 +1,7 @@
 .root{
     height: 70px;
     font-size: 24px;
-    background: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
+    background: #9fb4e3;
     display: flex;
     align-items: center;
     justify-content: center;

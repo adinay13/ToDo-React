@@ -6,7 +6,7 @@ function Header() {
     return (
         <Row>
             <Col>
-                <div className={s.root}>ToDo List</div>
+                <div className={s.root}>To-Do List</div>
             </Col>
         </Row>
 
